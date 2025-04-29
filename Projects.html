@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+  /*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+/* Timeline holder */
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+ /* Timeline vertical line */
+ul.timeline:before {
+    content: ' ';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    width: 4px;
+    height: 100%;
+    z-index: 400;
+    border-radius: 1rem;
+}
+
+li.timeline-item {
+    margin: 20px 0;
+}
+
+/* Timeline item arrow */
+.timeline-arrow {
+    border-top: 0.5rem solid transparent;
+    border-right: 0.5rem solid #fff;
+    border-bottom: 0.5rem solid transparent;
+    display: block;
+    position: absolute;
+    left: 2rem;
+}
+
+/* Timeline item circle marker */
+li.timeline-item::before {
+    content: ' ';
+    background: #ddd;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    left: 11px;
+    width: 14px;
+    height: 14px;
+    z-index: 400;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+body {
+    background: #E8CBC0;
+    background: -webkit-linear-gradient(to right, #E8CBC0, #636FA4);
+    background: linear-gradient(to right, #E8CBC0, #636FA4);
+    min-height: 100vh;
+}
+
+.text-gray {
+    color: #999;
+}
+
+</style>
+  <meta charset="utf-8">
+  <title>Subhajit Saha</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/Subhajit.jpg" rel="icon">
+  <link href="img/Subhajit.jpg" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+  body{
+    background-image: url("img/Home1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  </style>
+
+  <!-- =======================================================
+    Theme Name: DevFolio
+    Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body id="page-top">
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top">Subhajit Saha</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" style="font-size:16px" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+            <button class="dropbtn"><a class="nav-link js-scroll" style="font-size:16px" href="Academic_Profile.html">Academic Profile</a></button>
+            <div class="dropdown-content">
+            </div>
+          </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+            <button class="dropbtn"><a class="nav-link js-scroll" style="font-size:16px" href="Projects.html">Projects</a></button>
+            <div class="dropdown-content">
+            </div>
+          </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" style="font-size:16px" href="Experience.html">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" style="font-size:16px" href="Blog.html">Blog</a>
+          </li>
+	      </ul>
+      </div>
+    </div>
+  </nav>
+
+      <!-- For demo purpose -->
+      <div class="row text-center text-white mb-5">
+          <div class="col-lg-8 mx-auto">
+              <h1 class="display-4" style="color:#ffffff;padding-top:100px;font-family:product sans">Projects</h1>
+              <p class="lead mb-0" style="color:#ffffff;padding-top:10px;font-family:product sans">The cool projects I have been a part of or was created by me.</p>
+              <p><div class="line-mf"></div></p>
+              </div>
+          </div><!-- End -->
+
+
+          <div class="row">
+              <div class="col-lg-5 mx-auto">
+
+                  <!-- Timeline -->
+                  <ul class="timeline">
+
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                      <div class="timeline-arrow"></div>
+                      <center><!--<img src="img/iitkgp.jpg" alt="" class="img-fluid" style="padding-bottom:10px"></img>-->
+                      <h2 class="h5 mb-0">Sahyog AI | Software Engineering Project</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Associated with Indian Institute of Technology, Madras</span>
+                      <p class="text-small mt-2 font-weight-light"><b>Jan'2025 - April'2025</b></p>
+                      <p class="text-small mt-2 font-weight-light"><b>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Features</button>
+                        <a class="btn btn-warning" href="https://github.com/subhajitsaha01/Sahyog-AI" target="_blank">Github</a>
+                      </p>
+                    </center>
+                    </li>
+
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                      <div class="timeline-arrow"></div>
+                      <center><!--<img src="img/iitkgp.jpg" alt="" class="img-fluid" style="padding-bottom:10px"></img>-->
+                      <h2 class="h5 mb-0">Ways to mitigate challenges while conducting online tuitions in the current digital landscape | BDM Capstone Project</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Associated with Indian Institute of Technology, Madras</span>
+                      <p class="text-small mt-2 font-weight-light"><b>Sep'2024 - Nov'2024</b></p>
+                      <p class="text-small mt-2 font-weight-light"><b>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">Features</button>
+                        <a class="btn btn-warning" href="https://github.com/subhajitsaha01/BDM-Capstone-Project" target="_blank">Github</a>
+                      </p>
+                    </center>
+                    </li>
+
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                      <div class="timeline-arrow"></div>
+                      <center><!--<img src="img/iitkgp.jpg" alt="" class="img-fluid" style="padding-bottom:10px"></img>-->
+                      <h2 class="h5 mb-0">CrimeCast | Machine Learning Practise Project</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Associated with Indian Institute of Technology, Madras</span>
+                      <p class="text-small mt-2 font-weight-light"><b>Apr'2024 - Aug'2024</b></p>
+                      <p class="text-small mt-2 font-weight-light"><b>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal4">Features</button>
+                        <a class="btn btn-warning" href="https://github.com/subhajitsaha01/BDM-Capstone-Project" target="_blank">Github</a>
+                      </p>
+                    </center>
+                    </li>
+
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                      <div class="timeline-arrow"></div>
+                      <center><!--<img src="img/iitkgp.jpg" alt="" class="img-fluid" style="padding-bottom:10px"></img>-->
+                      <h2 class="h5 mb-0">MusicStream | Music Streaming Application | App Dev 2 Project</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Associated with Indian Institute of Technology, Madras</span>
+                      <p class="text-small mt-2 font-weight-light"><b>Jan'2024 - May'2024</b></p>
+                      <p class="text-small mt-2 font-weight-light"><b>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal5">Features</button>
+                        <a class="btn btn-warning" href="https://github.com/subhajitsaha01/MAD2-Project-MusicStream" target="_blank">Github</a>
+                      </p>
+                    </center>
+                    </li>
+
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                      <div class="timeline-arrow"></div>
+                      <center><!--<img src="img/iitkgp.jpg" alt="" class="img-fluid" style="padding-bottom:10px"></img>-->
+                      <h2 class="h5 mb-0">Grocery Store | Grocery Management System | App Dev 1 Project</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Associated with Indian Institute of Technology, Madras</span>
+                      <p class="text-small mt-2 font-weight-light"><b>Jan'2023 - Apr'2023</b></p>
+                      <p class="text-small mt-2 font-weight-light"><b>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal6">Features</button>
+                        <a class="btn btn-warning" href="https://github.com/subhajitsaha01/App-Dev-1-IITMOD-Project---Grocery-Store" target="_blank">Github</a>
+                      </p>
+                    </center>
+                    </li>
+
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                      <div class="timeline-arrow"></div>
+                      <center><!--<img src="img/iitkgp.jpg" alt="" class="img-fluid" style="padding-bottom:10px"></img>-->
+                      <h2 class="h5 mb-0">Audio Analytics Dashboard</h2>
+                      <p class="text-small mt-2 font-weight-light"><b>Jan'2022 - Sep'2022</b></p>
+                      <p class="text-small mt-2 font-weight-light"><b>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal7">Features</button>
+                      </p>
+                    </center>
+                    </li>
+
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                      <div class="timeline-arrow"></div>
+                      <center><!--<img src="img/iitkgp.jpg" alt="" class="img-fluid" style="padding-bottom:10px"></img>-->
+                      <h2 class="h5 mb-0">Perry | Conversation Chatbot | Ecommerce Recommendation Engine | Bachelors Dissertation Project</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Associated with St. Xavier's College (Autonomous), Kolkata</span>
+                      <p class="text-small mt-2 font-weight-light"><b>Jun'2021 - May'2022</b></p>
+                      <p class="text-small mt-2 font-weight-light"><b>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal8">Features</button>
+                        <a class="btn btn-warning" href="https://github.com/subhajitsaha01/Perry" target="_blank">Github</a>
+                      </p>
+                    </center>
+                    </li>
+
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                      <div class="timeline-arrow"></div>
+                      <center><!--<img src="img/iitkgp.jpg" alt="" class="img-fluid" style="padding-bottom:10px"></img>-->
+                      <h2 class="h5 mb-0">https://subhajitsaha01.github.io</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Personal Website</span>
+                      <p class="text-small mt-2 font-weight-light"><b>Regulary Updated</b></p>
+                      <p class="text-small mt-2 font-weight-light"><b>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Features</button>
+                        <a class="btn btn-warning" href="https://github.com/subhajitsaha01/subhajitsaha01.github.io" target="_blank">Github</a>
+                      </p>
+                    </center>
+                  </li>
+                      
+                    </ul><!-- End -->
+
+                  <!-- Modal for Personal Website -->
+                  <div class="modal fade" id="myModal2" role="dialog">
+                    <div class="modal-dialog">
+                    
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Sahyog AI</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body" style="font-weight: 500;">
+                            <p>Sahayog is an academic AI assistant for IITM BS students. It guides learners to lectures and resources without direct answers, promoting critical thinking and integrity. Integrated with the SEEK portal, it adapts to course content, offers web searches, and supports developers with conversation tracking—simplifying navigation and supporting self-paced learning.
+                              The primary features of this portal are :
+                              <ul>
+                              <li>As a Student, I want external resources to be recommended to me when no or insufficient results are
+                              found in the portal when asked a query, So that I can expand my learning and find the information I need.</li>
+                              <li>As a Student, I want to be directed to the specific lecture number, references or documentation within.</li>
+                              the portal, So that I can quickly access relevant learning materials without searching extensively.
+                              <li>As a Developer, I want to maintain previous conversations, So that I can monitor and assess the agent’s responses effectively.</li>
+                              <li>As a Student, I want the system to address FAQs and provide logistics and contact information, So that I can benefit from the collective knowledge if I need any kind of clarification and efficiently plan or get in touch without unnecessary delays.</li>
+                              </ul>
+                              <u>Skills Used : Software Engineering Practices, Large Language Models (LLM), Google Gemini, Tavily, Flask</u>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <!-- End of modal-->
+                  <!-- Modal for Personal Website -->
+                  <div class="modal fade" id="myModal3" role="dialog">
+                    <div class="modal-dialog">
+                    
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">BDM Capstone Project</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body" style="font-weight: 500;">
+                            <p>
+                              <ul>
+                                <li>This project focuses on an online tuitions business run by a sole entity located at the residence. The business falls under the unorganized sector which is a B2C. Currently, the business serves students by providing online classes on a demand basis.</li>
+
+                                  <li>The business is was facing declining rate of prospective students who want online classes. Since the owner uses the UrbanPro platform for prospective lead generation, the
+                                  owner was also looking for ways to increase the lead generation. At the same time the owner wanted to understand and track the operational expenditure and wanted to move towards efficient operational profit margin percentage to grow the business, so that it’s profitable in the long run. The owner also wanted to predict the annual income/revenue from this work.</li>
+
+                                  <li>Apart from that, owner also wanted to get hold of the operational expenses and what percentage is the actual revenue. Since, these issues identified has been persisting, it resulted
+                                  in missed opportunities for income maximization and has hindered the business owner’s ability to make informed decisions, necessitating a structured approach to address these 
+                                  inefficiencies and capitalize on the business’s potential.</li>
+
+                                  <li>To combat the issues/challenges identified and to provide quality suggestion to Business owner on ways he could improve the business outcome, a thorough analysis of the tuition
+                                  data was undertaken and a report was prepared containing the analysis. It will not only give insights on the current situation of the business and the revenue being generated, but also will help in understanding the best practices that should be followed. The issues will be addressed firstly by taking into proper documentation, all the data about inflow and outflow of revenue related to business related expenses. Also, by analysing the available data via different analytical approaches it was possible to obtain a fruitful outcome to solve the business challenges being faced by the owner.</li>
+                              </ul>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <!-- End of modal-->
+                  <!-- Modal for Personal Website -->
+                  <!-- Modal for Crime Cast Project -->
+                  <div class="modal fade" id="myModal4" role="dialog">
+                    <div class="modal-dialog">
+                    
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Machine Learning Practise Project</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body" style="font-weight: 500;">
+                            <p>
+                              <ul>
+                                <li>The objective of this project was to implement the learnings learnt from the Machine Learning Practise Course and develop models capable of accurately predicting the crime categories based on this information.</li>
+
+                                <li>The dataset offers a comprehensive snapshot of criminal activities within the city. It encompasses various aspects of each incident, including date, time, location, victim demographics and more.</li>
+
+                                <li>The project was carried out through a Kaggle competition where the main outcome was to leverage machine learning techniques, with which the dataset was to be analyzed to predict crime categories and enhance law enforcement strategies and bolster public safety measures.</li>
+
+                                <li>After proprocessing the dataset, I applied 7 models and did a comparative analysis of the training accuracy, testing accurcy and training times. I concluded that XGBoostClassifier was the best performing model in this dataset which reached around 95% testing accuracy on unknown dataset.</li>
+                              </ul>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <!-- End of modal-->
+                  <!-- Modal for Personal Website -->
+                  <!-- Modal for Music Stream Project -->
+                  <div class="modal fade" id="myModal5" role="dialog">
+                    <div class="modal-dialog">
+                    
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">MusicStream | App Dev 2 Project</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body" style="font-weight: 500;">
+                            <p>
+                              <ul>
+                                <li>A multi user Music streaming application was made consisting of division of responsibilities among 3 users: Admin, Creator and User.</li>
+                                <li>This web application has been made using by using Vue.js for frontend and Flask Microservices for backend seamlessly.</li>
+                                <li>Admins maintain the access level of the users as well as maintaining the data for the albums, songs and playlists, while Creators will create/update and view the albums and song data.</li>
+                                <li>Users can view the songs and albums data created by creators as well as create/update and view playlists of existing songs.</li>
+                                <li>Security was ensured in the application using token-based authentication, enforced by Flask Security.</li>
+                                <li>The application is made up of Flask REST Api which are restricted across various access levels of role-based authentication for strict data access, ensuring security at every call.</li>
+                                <li>Additionally, Redis and Celery have been integrated with the application, to send regular reminders for Users to login as well as sending monthly reports to Creators for the content created by them.</li>
+                                <li><u>Libraries Used for Implementation: HTML, CSS, JS, Vue js, Flask-Restful, Sqlite, Flask, Python, Redis, Celery, Chart js, Flask-Security</u></li>
+                              </ul>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <!-- End of modal-->
+                  <!-- Modal for Personal Website -->
+                  <!-- Modal for Grocery Store Project -->
+                  <div class="modal fade" id="myModal6" role="dialog">
+                    <div class="modal-dialog">
+                    
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Grocery Store | App Dev 1 Project</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body" style="font-weight: 500;">
+                            <p>
+                              <ul>
+                                <li>The objective of this project is to build a grocery management system where there will be a user and a store manager.</li>
+                                <li>The store manager can add various categories of products and can also add products under those categories.</li>
+                                <li>The store manager has also the provisions of updating or deleting the data.</li> 
+                                <li>Meanwhile the user can buy products, view his/her cart, update the products in the cart as well buy the products.</li>
+                                <li>Front end technologies: HTML, CSS, Bootstrap, JS - for working on front end views of the application and making it aesthetic and dynamic.</li>
+                                <li>Backend technologies: Flask – This framework is used for designing the backend portion of the project mainly for server-side rendering.</li>
+                                <li>Database Operations: Flask- SqlAlchemy – This library is used as an Object Relational Mapping framework for performing operations on the database table, mainly for performing Create, Read, Update and Delete operations.</li>
+                                <li>REST Api: Flask – Restful – This library is used to build restful web services for performing the CRUD operations on database table, mainly for the Products and Purchase module.</li>
+                                <li>Database: Sqlite – This embedded database is used as it is built in to Python and is highly efficient file-based database which doesn’t need a server for operations.</li>
+                                <li>Programming Language: Python – All the backend modules have been written in python programming language.</li>
+                                <li>Templating engine: Jinja2 – It is used as the templating engine for generating dynamic server pages along with Html content.</li>
+                                <li>Analysis: Pandas and Matplotlib – It is used for generating the statistical analysis and graphs for admin summary page.</li>
+                              </ul>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <!-- End of modal-->
+                  <!-- Modal for Personal Website -->
+                  <!-- Modal for Grocery Store Project -->
+                  <div class="modal fade" id="myModal7" role="dialog">
+                    <div class="modal-dialog">
+                    
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Audio Analytics Dashboard</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body" style="font-weight: 500;">
+                            <p>
+                              <ul>
+                                <li>This project was aimed at building an audio analysis dashboard which will detect the percentage of positive, negative and neutral emotion based on a person’s audio speech data.</li>
+                                <li>Apart from emotion, various type of speaking parameters can also be detected like type of speaker, speaking rate, articulation rate as well as transcript of the audio can also be generated.</li>
+                                <li>Also worked on a gender detection model using a person’s audio data.</li>
+                                <li>Libraries Implemented: Python, Sklearn, TensorFlow, PyDub, Librosa.</li>
+                              </ul>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <!-- End of modal-->
+                  <!-- Modal for Personal Website -->
+                  <!-- Modal for Grocery Store Project -->
+                  <div class="modal fade" id="myModal8" role="dialog">
+                    <div class="modal-dialog">
+                    
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Perry</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body" style="font-weight: 500;">
+                            <p>
+                              <ul>
+                                <li>This project was aimed at building a simple but elegant recommendation algorithm that internally performs multi-website product scraping, sentimental analysis, product analysis and keyword analysis.</li>
+                                <li>The project work revolves around improving product recommendation using product analysis and keyword analysis along with sentimental analysis.</li>
+                                <li>Libraries Implemented: Python, Sklearn, TensorFlow, Nltk, Flask, Html, CSS and JS.</li>
+                              </ul>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <!-- End of modal-->
+                  <!-- Modal for Personal Website -->
+                  <div class="modal fade" id="myModal1" role="dialog">
+                    <div class="modal-dialog">
+                    
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Personal Website</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                          <ul>
+                            <li>Find the latest updates about me in my personal website.</li>
+                            <li>Built using simple Html, CSS, Javascript and Bootstrap using a particular style of inbuilt theme of bootstrap but completely reengineered from scratch.</li>
+                            <li>My personal blogspot is also integrated with this website.</li>
+                          </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <!-- End of modal-->
+    
+
+              </div>
+          </div>
+      </div>
+
+  </section>
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  </body>
+  </html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+  /*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+/* Timeline holder */
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+ /* Timeline vertical line */
+ul.timeline:before {
+    content: ' ';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    width: 4px;
+    height: 100%;
+    z-index: 400;
+    border-radius: 1rem;
+}
+
+li.timeline-item {
+    margin: 20px 0;
+}
+
+/* Timeline item arrow */
+.timeline-arrow {
+    border-top: 0.5rem solid transparent;
+    border-right: 0.5rem solid #fff;
+    border-bottom: 0.5rem solid transparent;
+    display: block;
+    position: absolute;
+    left: 2rem;
+}
+
+/* Timeline item circle marker */
+li.timeline-item::before {
+    content: ' ';
+    background: #ddd;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    left: 11px;
+    width: 14px;
+    height: 14px;
+    z-index: 400;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+body {
+    background: #E8CBC0;
+    background: -webkit-linear-gradient(to right, #E8CBC0, #636FA4);
+    background: linear-gradient(to right, #E8CBC0, #636FA4);
+    min-height: 100vh;
+}
+
+.text-gray {
+    color: #999;
+}
+
+</style>
+  <meta charset="utf-8">
+  <title>Subhajit Saha</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/Subhajit.jpg" rel="icon">
+  <link href="img/Subhajit.jpg" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+  body{
+    background-image: url("img/Home1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  </style>
+</head>
+
+<body id="page-top">
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top">Subhajit Saha</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" style="font-size:16px" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+            <button class="dropbtn"><a class="nav-link js-scroll" style="font-size:16px" href="Academic_Profile.html">Academic Profile</a></button>
+            <div class="dropdown-content">
+            </div>
+          </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+            <button class="dropbtn"><a class="nav-link js-scroll" style="font-size:16px" href="Projects.html">Projects</a></button>
+            <div class="dropdown-content">
+            </div>
+          </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" style="font-size:16px" href="Experience.html">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" style="font-size:16px" href="Blog.html">Blog</a>
+          </li>
+	      </ul>
+      </div>
+    </div>
+  </nav>
+
+      <!-- For demo purpose -->
+      <div class="row text-center text-white mb-5">
+          <div class="col-lg-8 mx-auto">
+              <h1 class="display-4" style="color:#ffffff;padding-top:100px;font-family:product sans">Experience</h1>
+              <p class="lead mb-0" style="color:#ffffff;padding-top:10px;font-family:product sans">Positions of Responsibility held by me</p>
+              <p><div class="line-mf"></div></p>
+              </div>
+          </div><!-- End -->
+
+
+          <div class="row">
+              <div class="col-lg-5 mx-auto">
+
+                  <!-- Timeline -->
+                  <ul class="timeline">
+
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                      <div class="timeline-arrow"></div>
+                      <center><img src="img/iitkgp.jpg" alt="" class="img-fluid" style="padding-bottom:10px"></img>
+                      <h2 class="h5 mb-0">Research Scholar</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Indian Institute of Technology, Kharagpur</span>
+                      <p class="text-small mt-2 font-weight-light"><b>Nov, 2023 to Dec, 2024</b></p></center>
+                      <p class="text-small mt-2 font-weight-light"><b>
+                        <a href="#collapse_responsibility1" class="btn btn-info" data-toggle="collapse"><b>Responsibilities ...</b></a>
+                        <ul id="collapse_responsibility1" class="text-small mt-2 font-weight-light collapse">
+                          <li style="color: black;padding:10px">Assisting Professors with operations work regarding courses being taught by them at the institute.</li>
+
+                    
+                          </ul>
+                      </p>
+
+                  </li>
+
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                      <div class="timeline-arrow"></div>
+                      <center><img src="img/tata_consultancy_services_logo.jpg" alt="" class="img-fluid" style="padding-bottom:10px"></img>
+                      <h2 class="h5 mb-0">Senior Faculty (TCS ILP)</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Tata Consultancy Services Ltd.</span>
+                      <p class="text-small mt-2 font-weight-light"><b>Nov, 2023 to Dec, 2024</b></p></center>
+                      <p class="text-small mt-2 font-weight-light"><b>
+                        <a href="#collapse_responsibility2" class="btn btn-info" data-toggle="collapse"><b>Responsibilities ...</b></a>
+                        <ul id="collapse_responsibility2" class="text-small mt-2 font-weight-light collapse">
+                          <li style="color: black;padding:10px">Engaging with Stakeholders especially Business Skills Team, HR team and Delievery team and working with them for the smooth delivery of ILP Training Program.</li>
+
+                          <li style="color: black;padding:10px">Managed a team of 5-7 technical faculties along with the Faculty lead and worked upon the distribution of responsibilities among the team members.</li>
+
+                          <li style="color: black;padding:10px">Resolving trainee associates issues with respect to technical training and also helping them with their day to day training workflow.</li>
+
+                          <li style="color: black;padding:10px">Resolving critical issues with respect to Technical Team as well as trainee associates and providing resolutions so that the issues can be worked upon.</li>
+
+                          <li style="color: black;padding:10px">Working in-sync with the organization's management and conveying information from them to the team and as well as vice versa whenever required.</li>
+
+                          <li style="color: black;padding:10px">Contributed code to different kind of process innovation softwares as part of TD initiatives.</li>
+                          </ul>
+                      </p>
+
+                  </li>
+
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                      <div class="timeline-arrow"></div>
+                      <center><img src="img/tata_consultancy_services_logo.jpg" alt="" class="img-fluid" style="padding-bottom:10px"></img>
+                      <h2 class="h5 mb-0">Assistant Faculty (TCS ILP)</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Tata Consultancy Services Ltd.</span>
+                      <p class="text-small mt-2 font-weight-light"><b>Sep, 2022 to Nov, 2023</b></p></center>
+                      <p class="text-small mt-2 font-weight-light"><b>
+                        <a href="#collapse_responsibility3" class="btn btn-info" data-toggle="collapse"><b>Responsibilities ...</b></a>
+                        <ul id="collapse_responsibility3" class="text-small mt-2 font-weight-light collapse">
+                          <li style="color: black;padding:10px">Incharge of the training and development of engineering freshers (BTech, MTech, MCA) with the industry relevant skills, tools and technologies, so that they can be deployed to real-time projects.</li>
+
+                          <li style="color: black;padding:10px">Responsible for the training of the associates on Python, Core Java, JDBC, JSP, UI (Html, CSS and JS), SQL, Unix commands, Bash Programming, and Python Web frameworks like Flask and Flask Microservices.</li>
+
+                          <li style="color: black;padding:10px">Responsibilities revolve around Learning Group workflow execution, conducting sessions on various technical topics ranging from programming basics to advanced web and microservices.</li>
+
+                          <li style="color: black;padding:10px">LG workflow execution also includes preparation of reports on the performance of the associates in various assessments, which included advance programming as well as web. Closing of training offerings as well as also uploading the marks in the learning portal were a part of the workflow.</li>
+
+                          <li style="color: black;padding:10px">Ensuring the smooth execution of the agile sprint-based case study learning by associates and supervised the implementation of full stack developed projects worked upon by the trainees, which demonstrated their learning progress in the technical training.
+
+                          <li style="color: black;padding:10px">Contributed various learning materials and artifacts for the purpose of smooth delivery of the training programs by other faculties across different locations.</li>
+
+                          <li style="color: black;padding:10px">Conducting sessions as a part of the Continuous Learning Program (CLP) for the experienced associates as a part of organizational transformational initiatives as well as Full Stack Development (FSD) Training on technologies such as Core Java, JDBC, JSP and Servlets.</li>
+
+                          <li style="color: black;padding:10px">Helped the Regional Talent Development team with their various learning and talent development initiatives, on supporting the learning culture among TCS associates.</li>
+
+                          <li style="color: black;padding:10px">Organizing sessions for freshers on advanced topics like Green Computing, Devops, Agile and Performance coding and introducing to them the design principles of Enterprise application development.</li>
+                          </ul>
+                      </p>
+
+                  </li>
+
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                      <div class="timeline-arrow"></div>
+                      <center><img src="img/tata_consultancy_services_logo.jpg" alt="" class="img-fluid" style="padding-bottom:10px"></img>
+                      <h2 class="h5 mb-0">Graduate Trainee (TCS Ignite)</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Tata Consultancy Services Ltd.</span>
+                      <p class="text-small mt-2 font-weight-light"><b>May, 2022 to Sep, 2022</b></p></center>
+                      <p class="text-small mt-2 font-weight-light"><b>
+                        <a href="#collapse_responsibility4" class="btn btn-info" data-toggle="collapse"><b>Responsibilities...</b></a>
+                        <ul id="collapse_responsibility4" class="text-small mt-2 font-weight-light collapse">
+                          <li style="color: black;padding:10px">Got trained on various industry relevant technologies pertaining to Java, Python, Artificial Intelligence, Machine Learning and UI (Html, CSS, JS and React Basics).</li>
+
+                          <li style="color: black;padding:10px">Also got trained on Agile Methodologies and various testing and load balancing tools like Apache JMeter, SonarQube, Jira etc.</li>
+
+                          <li style="color: black;padding:10px">Worked on a project on Audio analytics using Machine Learning technologies as a part of the Incubation Bootcamp which was a part of the Ignite training curriculum.</li>
+
+                          <li style="color: black;padding:10px">Managed a group of 5 team members while working on the successful execution of the project.</li>
+                          </ul>
+                      </p>
+
+                  </li>
+                      
+                      
+                    </ul><!-- End -->
+
+              </div>
+          </div>
+      </div>
+
+  </section>
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  </body>
+  </html>
